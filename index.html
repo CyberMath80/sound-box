@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Sound Box by Cyber Math</title><link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;700;900&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <header>
+            <div class="text">
+                <h1><span class="dropcap">S</span>ound <span class="dropcap">B</span>ox</h1>
+            </div>
+            <svg>
+                <filter id="fire">
+                    <feTurbulence id="turbulence" baseFrequency="0.1 0.1" numOctaves="2" seed="3">
+                        <animate attributeName="baseFrequency" dur="3s" values="0.1 0.1;0.1 0.2" repeatCount="indefinite"></animate>
+                    </feTurbulence>
+                    <feDisplacementMap in="SourceGraphic" scale="20"></feDisplacementMap>
+                </filter>
+            </svg>
+            <h2>by CyberMath</h2>
+        </header>
+        
+        <div class="content-keys">
+            <p>Drums</p>
+            <div class="keys">
+                <div data-key="65" class="key">
+                    <span class="sound">Boom</span>
+                    <kbd>A</kbd>
+                </div>
+                <div data-key="90" class="key">
+                    <span class="sound">Clap</span>
+                    <kbd>Z</kbd>
+                </div>
+                <div data-key="69" class="key">
+                    <span class="sound">Cymbal</span>
+                    <kbd>E</kbd>
+                </div>
+                <div data-key="82" class="key">
+                    <span class="sound">Hihat</span>
+                    <kbd>R</kbd>
+                </div>
+                <div data-key="84" class="key">
+                    <span class="sound">Kick</span>
+                    <kbd>T</kbd>
+                </div>
+                <div data-key="89" class="key">
+                    <span class="sound">Openhat</span>
+                    <kbd>Y</kbd>
+                </div>
+                <div data-key="85" class="key">
+                    <span class="sound">Snare</span>
+                    <kbd>U</kbd>
+                </div>
+                <div data-key="73" class="key">
+                    <span class="sound">Tink</span>
+                    <kbd>I</kbd>
+                </div>
+                <div data-key="79" class="key">
+                    <span class="sound">Tom</span>
+                    <kbd>O</kbd>
+                </div>
+            </div>
+        </div>
+        <footer>
+            <p>Background Photo by <a href="https://unsplash.com/@petri_r?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Petri R on Unsplash</a></p>
+        </footer>
+        <audio data-key="65" src="./sounds/drums-kit/boom1.wav"></audio>
+        <audio data-key="90" src="./sounds/drums-kit/clap1.wav"></audio>
+        <audio data-key="69" src="./sounds/drums-kit/hihat1.wav"></audio>
+        <audio data-key="82" src="./sounds/drums-kit/kick1.wav"></audio>
+        <audio data-key="84" src="./sounds/drums-kit/openhat1.wav"></audio>
+        <audio data-key="89" src="./sounds/drums-kit/cymbal1.wav"></audio>
+        <audio data-key="85" src="./sounds/drums-kit/snare1.wav"></audio>
+        <audio data-key="73" src="./sounds/drums-kit/tink1.wav"></audio>
+        <audio data-key="79" src="./sounds/drums-kit/tom1.wav"></audio>
+        
+        <script src="app.js"></script>
+    </body>
+</html>
